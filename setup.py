@@ -145,7 +145,7 @@ else:
 
 # Compile the module
 setup(name = "PyODE",
-     version = "1.2.0",
+     version = "1.2.1",
      description = "Python wrapper for the Open Dynamics Engine",
      author = "see file AUTHORS",
      author_email = "timothy@stranex.com",
