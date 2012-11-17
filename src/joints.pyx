@@ -123,7 +123,7 @@ class JointParam(object):
 class JointParams(object):
     # Do not let the user add custom fields to this class
     # He may mispell a parameter name withoug getting any warning/error
-    __slots__ = ('_index', '_setParam', '_getParam', 'lo_stop', 'hi_stop', 'vel', 'fmax', 'fudge_factor', 'bounce', 'cfm', 'stop_erp', 'stop_cfm', 'suspension_erp', 'suspension_cfm')
+    __slots__ = ('_index', '_setParam', '_getParam', 'lo_stop', 'hi_stop', 'vel', 'fmax', 'fudge_factor', 'bounce', 'cfm', 'stop_erp', 'stop_cfm', 'suspension_erp', 'suspension_cfm', 'erp')
     lo_stop = JointParam(ParamLoStop )
     hi_stop = JointParam(ParamHiStop)
     vel = JointParam(ParamVel)
@@ -135,6 +135,7 @@ class JointParams(object):
     stop_cfm = JointParam(ParamStopCFM)
     suspension_erp = JointParam(ParamSuspensionERP)
     suspension_cfm = JointParam(ParamSuspensionCFM)
+    erp = JointParam(ParamERP)
 
     _index = 1
 
