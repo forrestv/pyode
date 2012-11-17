@@ -68,7 +68,65 @@ cdef extern from "ode/ode.h":
     ctypedef dReal dMatrix6[8*6]
     ctypedef dReal dQuaternion[4]
 
+    cdef extern int dParamLoStop
+    cdef extern int dParamHiStop
+    cdef extern int dParamVel
+    cdef extern int dParamFMax
+    cdef extern int dParamFudgeFactor
+    cdef extern int dParamBounce
+    cdef extern int dParamCFM
+    cdef extern int dParamStopERP
+    cdef extern int dParamStopCFM
+    cdef extern int dParamSuspensionERP
+    cdef extern int dParamSuspensionCFM
+    cdef extern int dParamERP
+
+    cdef extern int dParamLoStop2
+    cdef extern int dParamHiStop2
+    cdef extern int dParamVel2
+    cdef extern int dParamFMax2
+    cdef extern int dParamFudgeFactor2
+    cdef extern int dParamBounce2
+    cdef extern int dParamCFM2
+    cdef extern int dParamStopERP2
+    cdef extern int dParamStopCFM2
+    cdef extern int dParamSuspensionERP2
+    cdef extern int dParamSuspensionCFM2
+    cdef extern int dParamERP2
+
+    cdef extern int dParamLoStop3
+    cdef extern int dParamHiStop3
+    cdef extern int dParamVel3
+    cdef extern int dParamFMax3
+    cdef extern int dParamFudgeFactor3
+    cdef extern int dParamBounce3
+    cdef extern int dParamCFM3
+    cdef extern int dParamStopERP3
+    cdef extern int dParamStopCFM3
+    cdef extern int dParamSuspensionERP3
+    cdef extern int dParamSuspensionCFM3
+    cdef extern int dParamERP3
+
+    cdef extern int dParamGroup
+
+    cdef extern int dContactMu2
+    cdef extern int dContactFDir1
+    cdef extern int dContactBounce
+    cdef extern int dContactSoftERP
+    cdef extern int dContactSoftCFM
+    cdef extern int dContactMotion1
+    cdef extern int dContactMotion2
+    cdef extern int dContactMotionN
+    cdef extern int dContactSlip1
+    cdef extern int dContactSlip2
+    
+    cdef extern int dContactApprox0
+    cdef extern int dContactApprox1_1
+    cdef extern int dContactApprox1_2
+    cdef extern int dContactApprox1
+
     cdef extern dReal dInfinity
+
     cdef extern int dAMotorUser
     cdef extern int dAMotorEuler
 
