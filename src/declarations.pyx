@@ -153,7 +153,7 @@ cdef extern from "ode/ode.h":
         dReal bounce_vel
         dReal soft_erp
         dReal soft_cfm
-        dReal motion1,motion2
+        dReal motion1,motion2,motionN
         dReal slip1,slip2
 
     ctypedef struct dContactGeom:

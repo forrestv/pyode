@@ -215,6 +215,25 @@ cdef class Contact:
         """
         self._contact.surface.motion2 = m
 
+    # getMotionN
+    def getMotionN(self):
+        """getMotionN() -> float
+
+        Get the surface velocity in normal direction.
+        """
+        return self._contact.surface.motionN
+
+    # setMotionN
+    def setMotionN(self, m):
+        """setMotionN(m)
+
+        Set the surface velocity in normal direction.
+
+        @param m: Surface velocity
+        @type m: float
+        """
+        self._contact.surface.motionN = m
+
     # getSlip1
     def getSlip1(self):
         """getSlip1() -> float
